@@ -4,7 +4,10 @@ metadata:
   name: voting-app
   labels:
     tier: frontend
+    app: google
+    type: vote
 spec:
   containers:
-  - name: myapp-nginx
+  - name: myapp
     image: nginx:latest
+    
