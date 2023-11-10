@@ -4,9 +4,7 @@ metadata:
   name: sed5-voting-app
   labels:
     tier: frontend
-    app: google
-    type: vote
 spec:
   containers:
-  - name: myapp
+  - name: myapp-nginx
     image: nginx:latest
