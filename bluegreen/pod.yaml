@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sed-voting-app
+  name: sed5-voting-app
   labels:
     tier: frontend
     app: google
