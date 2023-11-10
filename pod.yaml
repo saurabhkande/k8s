@@ -4,9 +4,10 @@ metadata:
   name: voting-app
   labels:
     tier: frontend
-    app: google
-    type: vote
+    app: gke
 spec:
   containers:
   - name: myapp
     image: nginx:latest
+    ports:
+      - containerPort: 90
