@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: argo-rs
+spec:
+  replicas: 4
+  selector:
+    app: argo-rs
+  template:
+    metadata:
+      name: argo-rs
+      labels:
+        tier: frontend
+    spec:
+      containers:
+        - name: myapp-nginx
+          image: nginx:latest
