@@ -5,10 +5,10 @@ metadata:
 spec:
   replicas: 4
   selector:
-    app: argo-rs
+    app: argo
   template:
     metadata:
-      name: argo-rs
+      name: argo
       labels:
         tier: frontend
     spec:
