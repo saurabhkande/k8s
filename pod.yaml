@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app
+  labels:
+    tier: frontend
+    app: google
+    type: vote
+spec:
+  containers:
+  - name: myapp
+    image: nginx:latest
