@@ -13,6 +13,6 @@ spec:
         type: vote
     spec:
       containers:
-        - name: ngi-con
+        - name: my-ngi-con
           image: nginx:latest
           
