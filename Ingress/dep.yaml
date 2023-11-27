@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: kekw
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kekw
+  template:
+    metadata:
+      labels:
+        app: kekw
+    spec:
+      containers:
+      - name: apps
+        image: sau321/my-repo:argo
+        ports:
+        - containerPort: 80

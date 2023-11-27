@@ -1,0 +1,36 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  labels:
+    jkl: llop
+  namespace: rahul
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: proms-serv
+            port:
+              number: 9090
+            namespace: rahul
+      - path: /path1
+        pathType: Prefix
+        backend:
+          service:
+            name: pots-service
+            port:
+              number: 80
+            namespace: rahul
+      - path: /path2
+        pathType: Prefix
+        backend:
+          service:
+            name: pots-service
+            port:
+              number: 80
+            namespace: rahul
