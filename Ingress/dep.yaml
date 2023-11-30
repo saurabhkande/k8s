@@ -4,6 +4,7 @@ metadata:
   name: nginx
   labels:
     app: kekw
+    app2: kekw2
 spec:
   replicas: 3
   selector:
