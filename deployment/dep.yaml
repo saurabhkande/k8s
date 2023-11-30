@@ -7,7 +7,6 @@ spec:
   selector:
     matchLabels:
       app: nginx
-      app2: nginx2
   template:
     metadata:
       labels:
