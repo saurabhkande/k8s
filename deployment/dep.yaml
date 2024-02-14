@@ -1,20 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: sample-app
 spec:
   replicas: 3  
   selector:
     matchLabels:
-      app: nginx
-      app4: ngi4
+      app: webapp
   template:
     metadata:
       labels:
-        app: nginx
+        app: webapp
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: my-app
+        image: 787367675716.dkr.ecr.ap-south-1.amazonaws.com/ssk-ecr-repo:latest
         ports:
         - containerPort: 80
